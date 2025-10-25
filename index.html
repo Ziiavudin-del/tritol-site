@@ -1,116 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TRITOL — Профессиональный электроинструмент 21В</title>
-<meta name="description" content="TRITOL — профессиональный электроинструмент 21В. Сила, точность и контроль.">
-<meta name="theme-color" content="#0a0f0d">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<style>
-*{box-sizing:border-box} html,body{margin:0;padding:0} img{display:block;max-width:100%}
-:root{--bg:#0b0f0d;--panel:#101612;--line:#1b241f;--ink:#e9fff2;--muted:#a6c6b6;--acc:#00e676;--acc2:#3cf7b6}
-body{background:linear-gradient(180deg,#070a08,#0c120e);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
-.container{width:min(1200px,92vw);margin:0 auto}
-.topbar{background:#0d1411;border-bottom:1px solid var(--line)}
-.top-inner{display:grid;grid-template-columns:160px 1fr 360px;gap:12px;align-items:center;padding:10px 0}
-.logo{font-weight:900;font-size:22px;letter-spacing:.08em;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;color:transparent}
-.search{display:flex;gap:8px}
-.search input{flex:1;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:#0f1814;color:var(--ink)}
-.search button{padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:linear-gradient(90deg,var(--acc),var(--acc2));color:#052d1b;font-weight:800}
-.channels{display:flex;gap:10px;justify-content:flex-end;align-items:center;flex-wrap:wrap}
-.btn-ghost{padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--ink);text-decoration:none}
-.tag{font-size:12px;color:var(--muted)}
-.nav{background:#0e1512;border-bottom:1px solid var(--line)}
-.nav .container{display:flex;gap:14px;flex-wrap:wrap;padding:8px 0}
-.nav a{color:var(--ink);text-decoration:none;padding:8px 10px;border-radius:10px;opacity:.9}
-.nav a:hover{opacity:1;background:rgba(255,255,255,.06)}
-.hero{position:relative;min-height:58svh;background:#0b0f0d url('hero.jpg') center/cover no-repeat}
-.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.25) 30%,rgba(0,0,0,.60))}
-.section{padding:26px 0}
-h2{font-size:clamp(22px,3.8vw,34px);margin:0 0 12px}
-p.lead{color:var(--muted);max-width:75ch}
-.card{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:14px;padding:14px}
-.form{display:grid;gap:12px;max-width:720px}
-.input, textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:#0f1814;color:var(--ink)}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:680px){.row{grid-template-columns:1fr}}
-.actions{display:flex;gap:10px;flex-wrap:wrap}
-.btn{padding:12px 16px;border-radius:10px;border:1px solid var(--line);font-weight:800;cursor:pointer}
-.btn.primary{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#052d1b;border:none}
-.btn.alt{background:rgba(255,255,255,.06);color:var(--ink)}
-.footer{border-top:1px solid var(--line);color:var(--muted);text-align:center;padding:18px 0;margin-top:24px}
-.small{font-size:12px;color:var(--muted)}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRITOL — Сила технологий будущего</title>
+  <meta name="description" content="TRITOL — профессиональный электроинструмент нового поколения. Сила, точность и технологии будущего.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #0d0f0e;
+      color: #e8e8e8;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(10, 14, 12, 0.95);
+      border-bottom: 1px solid #00e676;
+    }
+    header img {
+      height: 50px;
+    }
+    header nav a {
+      color: #00e676;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+    header nav a:hover {
+      color: #3cf7b6;
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: brightness(0.85);
+    }
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      padding: 40px 20px;
+      border-radius: 12px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #00e676;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #d9fff0;
+    }
+    footer {
+      background: #080a09;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #00e676;
+    }
+  </style>
 </head>
 <body>
-<div class="topbar">
-  <div class="container top-inner">
-    <div class="logo">TRITOL</div>
-    <form class="search" onsubmit="event.preventDefault()">
-      <input type="search" placeholder="Поиск по каталогу..." aria-label="Поиск">
-      <button type="submit">Найти</button>
-    </form>
-    <div class="channels">
-      <span class="tag">Связаться:</span>
-      <a class="btn-ghost" href="https://t.me/TRITOL1" target="_blank" rel="noopener">Telegram</a>
-      <a class="btn-ghost" href="https://wa.me/79882973491" target="_blank" rel="noopener">WhatsApp</a>
-      <a class="btn-ghost" href="mailto:ziiavudin@icloud.com">Email</a>
+  <header>
+    <img src="logo-tritol.svg" alt="TRITOL Logo">
+    <nav>
+      <a href="catalog.html">Каталог</a>
+      <a href="privacy.html">Политика</a>
+      <a href="terms.html">Условия</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <picture>
+      <source media="(max-width: 768px)" srcset="cover-mobile.jpg">
+      <img src="cover-desktop.jpg" alt="TRITOL — сила технологий будущего">
+    </picture>
+    <div class="hero-content">
+      <h1>TRITOL</h1>
+      <p>Сила технологий будущего</p>
     </div>
-  </div>
-</div>
-<nav class="nav">
-  <div class="container">
-    <a href="/index.html">Главная</a>
-    <a href="/catalog.html">Каталог</a>
-    <a href="/privacy.html">Политика</a>
-    <a href="/terms.html">Условия</a>
-    <a href="#contacts">Контакты</a>
-  </div>
-</nav>
+  </section>
 
-<section class="hero" aria-label="Обложка TRITOL"></section>
-
-<section class="section" id="about">
-  <div class="container">
-    <h2>О бренде TRITOL</h2>
-    <p class="lead">TRITOL — профессиональный электроинструмент 21В. Наш символ — орёл: сила, точность и контроль. Честные характеристики, крепкие корпуса и совместимая экосистема аккумуляторов.</p>
-  </div>
-</section>
-
-<section class="section" id="contacts">
-  <div class="container">
-    <h2>Контакты</h2>
-    <div class="card">
-      <form class="form" onsubmit="event.preventDefault();">
-        <div class="row">
-          <input class="input" id="name" placeholder="Имя">
-          <input class="input" id="phone" placeholder="Телефон">
-        </div>
-        <textarea class="input" id="msg" rows="4" placeholder="Сообщение"></textarea>
-        <div class="actions">
-          <button type="button" class="btn primary" onclick="sendWhatsApp()">Отправить в WhatsApp</button>
-          <button type="button" class="btn alt" onclick="sendEmail()">Отправить на Email</button>
-        </div>
-        <div class="small">Или напишите нам напрямую: <a href="https://t.me/TRITOL1" target="_blank">@TRITOL1</a></div>
-      </form>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  © 2025 TRITOL — профессиональный электроинструмент • <span class="small">Демо-версия.</span>
-</footer>
-
-<script>
-function enc(id){return encodeURIComponent((document.getElementById(id).value||'').trim());}
-function sendWhatsApp(){
-  var text='TRITOL%0AИмя:%20'+enc('name')+'%0AТелефон:%20'+enc('phone')+'%0AСообщение:%20'+enc('msg');
-  window.open('https://wa.me/79882973491?text='+text,'_blank');
-}
-function sendEmail(){
-  var subject=encodeURIComponent('Заявка с сайта TRITOL');
-  var body='Имя: '+enc('name')+'%0AТелефон:%20'+enc('phone')+'%0AСообщение:%20'+enc('msg');
-  location.href='mailto:ziiavudin@icloud.com?subject='+subject+'&body='+body;
-}
-</script>
-</body></html>
+  <footer>
+    © 2025 TRITOL. Все права защищены.
+  </footer>
+</body>
+</html>
